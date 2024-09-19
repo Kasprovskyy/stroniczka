@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* nav */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.nav-item {
+    line-height: 80px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    transition: font-size .3s, color .3s;
+}
+
+.nav-link:hover {
+    font-size: 25px;
+    color: rosybrown;
+}
+
+.main-text {
+    font-size: 30px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+span {
+    color: 	#a67a69;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url(../imgs/groom-1850932_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.image-filter {
+    width: 100%;
+    height: 100%;
+    background-color: #00000075;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    line-height: 400px;
+    transform: translate(-50%);
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+.header-paragraph {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+/* main ==> section categories */
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    grid-gap: 0 100px;
+    margin: 20px;
+}
+
+.category {
+    text-align: center;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+
+.category:hover {
+    scale: 1.05;
+}
+
+.accesories {
+    background-image: url(../imgs/wristwatch-407096_1920.jpg);
+}
+.business {
+    background-image: url(../imgs/man-642063_1920.jpg);
+}
+.wedding {
+    background-image: url(../imgs/wedding-5156642_1920.jpg);
+}
+
+h4 {
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+/* main ==> section offert */
+
+.offert {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 250px; */
+    grid-auto-rows: 30vw;
+    grid-gap: 50px 0;
+    margin: 20px;
+}
+
+.product-container {
+    margin-top: 100px;
+}
+
+
+.product {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-image: url(../imgs/BBTORO000SZ706SP4452_FRONT_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.buy-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 50px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.buy-button:active 
+{
+    background-color: #202020;
+}
+
+.buy-button:hover {
+    cursor: pointer;
+}
+
+.price {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 576px)
+{
+    nav {
+        grid-template-columns: 12fr 1fr;
+        grid-template-rows: 0px 0px;
+    }
+    header {
+        height: 250px;
+    }
+    .main-text {
+        position: relative;
+        left: -5%;
+        font-size: 25px;
+    }
+    .fa-bars {
+        position: relative;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-10px);
+        font-size: 20px;
+        display: inline;
+        color: white;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 80px 20px;
+        margin: 20px;
+    }
+
+    .header-text {
+        top: 0;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .header-paragraph {
+        top: 55.5vw;
+        font-size: 15px;
+    }
+
+    .offert {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 500px;
+    }
+}
+
+@media (max-width: 955px)
+{
+    nav {
+        grid-template-columns: 12fr 1fr;
+        grid-template-rows: 0px 0px;
+    }
+    header {
+        height: 250px;
+    }
+    .main-text {
+        position: relative;
+        left: -5%;
+        font-size: 30px;
+    }
+    .fa-bars {
+        position: relative;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-15px);
+        font-size: 30px;
+        display: inline;
+        color: white;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 80px 20px;
+        margin: 20px;
+    }
+
+    .header-text {
+        top: 0;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .header-paragraph {
+        top: 25vh;
+        font-size: 15px;
+    }
+
+    .offert {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 700px;
+    }
+}
