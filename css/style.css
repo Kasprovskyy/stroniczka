@@ -7,6 +7,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* nav */
 
 nav {
@@ -17,6 +21,10 @@ nav {
     width: 100%;
     background-color: #000;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-item {
@@ -57,8 +65,8 @@ header {
 h3 {
     text-align: center;
     font-size: 40px;
-    margin-top: 40px;
-    margin-bottom: -40px;
+    margin-top: 170px;
+    margin-bottom: -20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
@@ -97,6 +105,7 @@ h3 {
     grid-template-rows: 150px;
     grid-gap: 0 100px;
     margin: 20px;
+    margin-bottom: -100px;
 }
 
 .category {
