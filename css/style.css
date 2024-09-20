@@ -201,6 +201,25 @@ h4 {
     color: #00000000;
 }
 
+/* footer */
+footer {
+    margin-top: 200px;
+    height: 80px;
+}
+
+.line {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 80%;
+    background-color: #000;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 25px;
+}
 
 @media (max-width: 576px)
 {
